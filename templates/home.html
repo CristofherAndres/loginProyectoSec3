@@ -7,13 +7,9 @@
     {% if user.is_authenticated %}
         <h1>Hola {{user.username}}</h1>
 
-        <form action="{% url 'logout' %}" method="post">
-            {% csrf_token %}
-            <button type="submit">Cerrar sesión</button>
 
-            <a href="{% url 'password_change' %}">Cambiar contraseña</a>
 
-        </form>
+         <a href="{% url 'password_change' %}">Cambiar contraseña</a>
 
     {%else %}
         <p>No estas logeado</p>
