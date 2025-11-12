@@ -18,7 +18,7 @@
     {%else %}
         <p>No estas logeado</p>
         <a href="{% url 'login' %}">Log in</a>
-        <a href="{% url 'password_reset' %}">Recuperar contraseña</a>
+        <a href="{% url 'password_reset' %}" class="btn btn-info">Recuperar contraseña</a>
     {% endif %}
 
 {% endblock %}
